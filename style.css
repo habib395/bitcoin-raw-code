@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* GLOBAL RESET & FONT */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.comfortaa {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* UTILITY CLASSES */
+.display-flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+/* NAVBAR STYLE */
+
+.main-header {
+    position: absolute;
+    width: 100%;
+    z-index: 1000; 
+}
+
+.navbar {
+    max-width: 1340px;
+    margin: 10px 20px; 
+    height: auto; 
+    padding: 15px 30px; 
+    justify-content: space-between;
+    border: 1px solid rgba(30, 58, 138, 0.99);
+    border-radius: 70px;
+    background-color: rgba(255, 255, 255, 0.4); 
+    backdrop-filter: blur(5px);
+}
+
+/* Brand Link স্টাইল */
+.brand-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.brand {
+    font-size: 32px;
+    font-weight: 700; 
+    color: rgba(30, 58, 138, 0.99);
+}
+
+.nav-links {
+    list-style: none;
+    gap: 30px; /
+}
+
+.nav-link {
+    font-size: 16px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500; 
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: rgba(30, 58, 138, 0.99);
+}
+
+.nav-item select {
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: inherit;
+    color: #333;
+}
+
+.nav-btn {
+    padding: 12px 24px;
+    background-color: rgba(30, 58, 138, 0.8);
+    color: white;
+    border: none;
+    border-radius: 40px; 
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: rgba(30, 58, 138, 1);
+}
+
+
+/* BANNER SECTION STYLE */
+
+.banner-section {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('assests/image/bit-two.jpg');   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 832px; 
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner-content {
+    padding-top: 150px; 
+    max-width: 800px;
+}
+
+.banner-heading {
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.banner-subtext {
+    font-size: 1.5rem;
+    color: #ccc;
+    font-weight: 300;
+}
